@@ -1,0 +1,149 @@
+.title__carta {
+    color: $secundary-color;
+}
+
+.ham {
+    color: $secundary-color;
+}
+
+.ham1 {
+    color: rgb(176, 175, 175);
+}
+
+.price {
+    color: $secundary-color;
+}
+
+.tituloMenu {
+    border: solid 5px $secundary-color;
+    color: $secundary-color;
+}
+
+.contenedorHamburguesa {
+    border-bottom: solid 2px $secundary-color;
+
+}
+
+.botonCarta {
+    width: 270px;
+    font-size: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: $secundary-color;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background-color: $secundary-color;
+        z-index: -1;
+        transition: all 0.5s;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+
+    &:hover {
+        color: $primary-color;
+    }
+
+    &:active::before {
+        background: #b9b9b9;
+    }
+}
+
+
+.sacarDecoracion {
+    color: $secundary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+.card {
+    width: 190px;
+    padding: .8em;
+    background: $success;
+    color: $primary-color;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgb(255, 255, 255), 0 1px 2px rgba(255, 225, 0, 0.24);
+}
+
+.card-img {
+    background-color: $primary-color;
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+
+    &:hover {
+        transform: translateY(-25%);
+        box-shadow: rgb(255, 255, 255) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+    }
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid $secundary-color;
+}
+
+.text-title {
+    padding-bottom: 25%;
+    height: 5vh;
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.text-body {
+    height: 18vh;
+    color: white !important;
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+.card-button {
+    background-color: $secundary-color;
+    border: 1px solid $secundary-color;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+
+
+    &:hover {
+        border: 1px solid $primary-color;
+        background-color: $primary-color;
+    }
+}
+
+.cartasMenu {
+    margin: 15px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}

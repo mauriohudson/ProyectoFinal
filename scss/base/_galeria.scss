@@ -1,0 +1,210 @@
+ .grid-picture1 {
+     filter: grayscale(100%);
+ }
+
+ .grid-picture1:hover {
+     filter: grayscale(0%);
+ }
+
+
+.gallery_container {
+    display: grid;
+    padding: 1% 0;
+    max-width: 100%;
+    @include carrousel (150vh, 100%);
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "picture-11 picture-21 picture-31 picture-41 picture-51"
+        "picture-61 picture-71 picture-81 picture-91 picture-101"
+        "picture-111 picture-12 picture-22 picture-32 picture-42"
+        "picture-52 picture-62 picture-72 picture-82 picture-92"
+        "picture-102 picture-112 picture-13 picture-23 picture-33"
+        "picture-43 picture-53 picture-63 picture-73 picture-83"
+        ;
+}
+
+.picture-11 {
+    grid-area: picture-11;
+    background-image: url(../galeria/cer1.jpg);
+    @extend .background;
+}
+
+.picture-21 {
+    grid-area: picture-21;
+    background-image: url(../galeria/com11.jpg);
+    @extend .background;
+    background-repeat: no-repeat;
+
+}
+
+.picture-31 {
+    grid-area: picture-31;
+    background-image: url(../galeria/dri11.jpg);
+    @extend .background;
+    background-repeat: no-repeat;
+}
+
+.picture-41 {
+    grid-area: picture-41;
+    background-image: url(../galeria/cer2.jpg);
+    @extend .background;
+}
+
+.picture-51 {
+    grid-area: picture-51;
+    background-image: url(../galeria/com22.jpg);
+    @extend .background;
+}
+
+.picture-61 {
+    grid-area: picture-61;
+    background-image: url(../galeria/dri22.jpg);
+    @extend .background;
+}
+
+.picture-71 {
+    grid-area: picture-71;
+    background-image: url(../galeria/cer3.jpg);
+    @extend .background;
+}
+
+.picture-81 {
+    grid-area: picture-81;
+    background-image: url(../galeria/com33.jpg);
+    @extend .background;
+}
+
+.picture-91 {
+    grid-area: picture-91;
+    background-image: url(../galeria/dd11.jpg);
+    @extend .background;
+}
+
+.picture-101 {
+    grid-area: picture-101;
+    background-image: url(../galeria/cer4.jpg);
+    @extend .background;    
+}
+
+.picture-111 {
+    grid-area: picture-111;
+    background-image: url(../galeria/com44.jpg);
+    @extend .background;
+}
+
+.picture-12 {
+    grid-area: picture-12;
+    background-image: url(../galeria/dri33.jpg);
+    @extend .background;    
+}
+
+.picture-22 {
+    grid-area: picture-22;
+    background-image: url(../galeria/cer5.jpg);
+    @extend .background;    
+}
+
+.picture-32 {
+    grid-area: picture-32;
+    background-image: url(../galeria/com55.jpg);
+    @extend .background;    
+}
+
+.picture-42 {
+    grid-area: picture-42;
+    background-image: url(../galeria/dri44.jpg);
+    @extend .background;    
+}
+
+.picture-52 {
+    grid-area: picture-52;
+    background-image: url(../galeria/cer6.jpg);
+    @extend .background;    
+}
+
+.picture-62 {
+    grid-area: picture-62;
+    background-image: url(../galeria/com66.jpg);
+    @extend .background;    
+}
+
+.picture-72 {
+    grid-area: picture-72;
+    background-image: url(../galeria/dri55.jpg);
+    @extend .background;    
+}
+
+.picture-82 {
+    grid-area: picture-82;
+    background-image: url(../galeria/cer7.jpg);
+    @extend .background;    
+}
+
+.picture-92 {
+    grid-area: picture-92;
+    background-image: url(../galeria/com77.jpg);
+    @extend .background;    
+}
+
+.picture-102 {
+    grid-area: picture-102;
+    background-image: url(../galeria/dri66.jpg);
+    @extend .background;    
+}
+
+.picture-112 {
+    grid-area: picture-112;
+    background-image: url(../galeria/cer8.jpg);
+    @extend .background;    
+}
+
+.picture-13 {
+    grid-area: picture-13;
+    background-image: url(../galeria/com88.jpg);
+    @extend .background;    
+}
+
+.picture-23 {
+    grid-area: picture-23;
+    background-image: url(../galeria/dri77.jpg);
+    @extend .background;    
+}
+
+.picture-33 {
+    grid-area: picture-33;
+    background-image: url(../galeria/cer9.jpg);
+    @extend .background;    
+}
+
+.picture-43 {
+    grid-area: picture-43;
+    background-image: url(../galeria/com99.jpg);
+    @extend .background;    
+}
+
+.picture-53 {
+    grid-area: picture-53;
+    background-image: url(../galeria/dri88.jpg);
+    @extend .background;    
+}
+
+.picture-63 {
+    grid-area: picture-63;
+    background-image: url(../galeria/cer10.jpg);
+    @extend .background;    
+}
+
+.picture-73 {
+    grid-area: picture-73;
+    background-image: url(../galeria/com100.jpg);
+    @extend .background;    
+}
+
+.picture-83 {
+    grid-area: picture-83;
+    background-image: url(../galeria/dri99.jpg);
+    @extend .background;    
+}
+

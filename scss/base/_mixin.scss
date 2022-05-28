@@ -1,0 +1,345 @@
+@mixin icon {
+  color: $secundary-color;
+  font-size: 50px;
+}
+
+@mixin carrousel ($alto, $ancho) {
+  height: $alto;
+  width: $ancho;
+}
+
+
+@mixin media {
+  @media only screen and (min-width: 320px) and (max-width: 540px) {
+
+    .home .carousel-control-next,
+    .home .carousel-control-prev {
+      display: none;
+    }
+
+    .home .carouselExampleIndicators {
+      height: 40px;
+      width: 40px;
+    }
+
+    .home .carousel-inner .carousel-item {
+      height: 50vh;
+    }
+
+    .home .carousel-inner .carousel-item .container__text h1 {
+      font-size: 50px;
+    }
+
+    .home .carousel-inner .carousel-item p {
+      font-size: 20px;
+    }
+
+    .gallery_container {
+      display: grid;
+      padding: 1% 0;
+      max-width: 100%;
+      @include carrousel (1000vh, 100%);
+      gap: 5px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(30, 1fr);
+      grid-template-areas:
+          "picture-11" 
+          "picture-21" 
+          "picture-31" 
+          "picture-41" 
+          "picture-51"
+          "picture-61" 
+          "picture-71" 
+          "picture-81" 
+          "picture-91" 
+          "picture-101"
+          "picture-111" 
+          "picture-12" 
+          "picture-22" 
+          "picture-32" 
+          "picture-42"
+          "picture-52" 
+          "picture-62" 
+          "picture-72" 
+          "picture-82" 
+          "picture-92"
+          "picture-102" 
+          "picture-112" 
+          "picture-13" 
+          "picture-23" 
+          "picture-33"
+          "picture-43" 
+          "picture-53" 
+          "picture-63" 
+          "picture-73" 
+          "picture-83"
+          ;
+  }
+    .gallery_container1 {
+      height: 300vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(9, 1fr);
+      grid-template-areas: "picture-1""picture-2""picture-3""picture-4""picture-5""picture-6""picture-7""picture-8""picture-9";
+    }
+
+    .contacto {
+      padding-top: 15px;
+    }
+
+    .container__contactos {
+      background-size: contain;
+    }
+
+    .title {
+      font-size: 30px;
+      margin: 0;
+    }
+
+    .p1 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .filosofiaCartas {
+      padding: 0;
+    }
+
+    .section1 {
+      height: 230vh;
+    }
+
+
+    .text-body {
+      height: auto;
+    }
+
+    .redes {
+      padding-top: 15px;
+    }
+
+    .boton {
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  @media only screen and (min-width: 540px) and (max-width: 768px) {
+
+    .home .carousel-control-next,
+    .home .carousel-control-prev {
+      display: none;
+    }
+
+    .home .carouselExampleIndicators {
+      height: 40px;
+      width: 40px;
+    }
+
+    .home .carousel-inner .carousel-item {
+      height: 50vh;
+    }
+
+    .home .carousel-inner .carousel-item .container__text h1 {
+      font-size: 50px;
+    }
+
+    .home .carousel-inner .carousel-item p {
+      font-size: 20px;
+    }
+
+    .gallery_container {
+      display: grid;
+      padding: 1% 0;
+      max-width: 100%;
+      @include carrousel (1500vh, 100%);
+      gap: 5px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(30, 1fr);
+      grid-template-areas:
+          "picture-11" 
+          "picture-21" 
+          "picture-31" 
+          "picture-41" 
+          "picture-51"
+          "picture-61" 
+          "picture-71" 
+          "picture-81" 
+          "picture-91" 
+          "picture-101"
+          "picture-111" 
+          "picture-12" 
+          "picture-22" 
+          "picture-32" 
+          "picture-42"
+          "picture-52" 
+          "picture-62" 
+          "picture-72" 
+          "picture-82" 
+          "picture-92"
+          "picture-102" 
+          "picture-112" 
+          "picture-13" 
+          "picture-23" 
+          "picture-33"
+          "picture-43" 
+          "picture-53" 
+          "picture-63" 
+          "picture-73" 
+          "picture-83"
+          ;
+  }
+    .gallery_container1 {
+      height: 300vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(9, 1fr);
+      grid-template-areas: "picture-1""picture-2""picture-3""picture-4""picture-5""picture-6""picture-7""picture-8""picture-9";
+    }
+
+    .contacto {
+      padding-top: 15px;
+    }
+
+    .container__contactos {
+      background-size: contain;
+    }
+
+    .title {
+      font-size: 30px;
+      margin: 0;
+    }
+
+    .p1 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .filosofiaCartas {
+      padding: 0;
+    }
+
+    .cardFilosofia {
+      width: 153px;
+      height: 224px;
+    }
+
+    .section1 {
+      height: 150vh;
+    }
+
+
+    .text-body {
+      height: auto;
+    }
+
+    .redes {
+      padding-top: 15px;
+    }
+
+    .boton {
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 834px) {
+
+    .home .carousel-control-next,
+    .home .carousel-control-prev {
+      display: none;
+    }
+
+    .home .carouselExampleIndicators {
+      height: 40px;
+      width: 40px;
+    }
+
+    .home .carousel-inner .carousel-item {
+      height: 50vh;
+    }
+
+    .home .carousel-inner .carousel-item .container__text h1 {
+      font-size: 50px;
+    }
+
+    .home .carousel-inner .carousel-item p {
+      font-size: 20px;
+    }
+
+    .gallery_container {
+      display: grid;
+      padding: 1% 0;
+      max-width: 100%;
+      @include carrousel (500vh, 100%);
+      gap: 5px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(15, 1fr);
+      grid-template-areas:
+          "picture-11 picture-21" 
+          "picture-31 picture-41" 
+          "picture-51 picture-61"
+          "picture-71 picture-81" 
+          "picture-91 picture-101" 
+          "picture-111 picture-12" 
+          "picture-22 picture-32" 
+          "picture-42 picture-52"
+          "picture-62 picture-72" 
+          "picture-82 picture-92" 
+          "picture-102 picture-112" 
+          "picture-13 picture-23" 
+          "picture-33 picture-43"
+          "picture-53 picture-63" 
+          "picture-73 picture-83" 
+          ;
+  } 
+
+    .gallery_container1 {
+      height: 300vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(9, 1fr);
+      grid-template-areas: "picture-1""picture-2""picture-3""picture-4""picture-5""picture-6""picture-7""picture-8""picture-9";
+    }
+
+    .contacto {
+      padding-top: 15px;
+    }
+
+    .container__contactos {
+      background-size: contain;
+    }
+
+    .title {
+      font-size: 30px;
+      margin: 0;
+    }
+
+    .p1 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .filosofiaCartas {
+      padding: 0;
+    }
+
+    .section1 {
+      height: 150vh;
+    }
+
+
+    .text-body {
+      height: auto;
+    }
+
+    .redes {
+      padding-top: 15px;
+    }
+
+    .boton {
+      height: 200px;
+      width: 200px;
+    }
+  }
+}
